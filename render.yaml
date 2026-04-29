@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: hive-mdk-provider
+    runtime: node
+    plan: starter
+    region: oregon
+    branch: main
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: MONROE_TREASURY
+        value: "0x15184bf50b3d3f52b60434f8942b7d52f2eb436e"
+      - key: HIVETRUST_URL
+        value: "https://hivetrust.onrender.com"
+      - key: SPREAD_BPS
+        value: "300"
+      - key: BASE_URL
+        value: "https://hive-mdk-provider.onrender.com"
+    healthCheckPath: /healthz

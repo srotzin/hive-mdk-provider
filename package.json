@@ -1,0 +1,36 @@
+{
+  "name": "hive-mdk-provider",
+  "version": "1.0.0",
+  "description": "Non-Tether MDK settlement provider for mining-side agent workloads. x402 on Base USDC + Solana USDC + Ethereum USDT at 3% spread.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Steve Rotzin <steve@thehiveryiq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srotzin/hive-mdk-provider.git"
+  },
+  "keywords": [
+    "mdk",
+    "mining",
+    "x402",
+    "settlement",
+    "bitcoin-mining",
+    "hive",
+    "usdc",
+    "base",
+    "solana",
+    "agent"
+  ]
+}
